@@ -31,5 +31,5 @@ jobs:
 
       - name: Live-build configure & build
         run: |
-          lb config --archive-areas "main contrib non-free" --distribution buster --debian-installer-distribution buster --bootappend-live "boot=live components hostname=live-mine-debian"
-          lb build
+          sudo lb config --archive-areas "main contrib non-free" --distribution buster --debian-installer-distribution buster --bootappend-live "boot=live components hostname=live-mine-debian"
+          sudo lb build
