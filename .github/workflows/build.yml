@@ -27,7 +27,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install dependecies
-        run: sudo apt install live-build dpkg binutils debootstrap
+        run: sudo apt install -y live-build dpkg binutils debootstrap
 
       - name: Live-build configure & build
         run: |
